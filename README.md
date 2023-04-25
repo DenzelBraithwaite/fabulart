@@ -86,3 +86,17 @@ If you have state that's important to retain within a component, consider creati
 import { writable } from 'svelte/store'
 export default writable(0)
 ```
+
+---
+
+# Here is a response from ChatGPT when comparing SvelteKit with Svelte + Vite
+
+> SvelteKit is a framework built on top of Svelte that aims to provide a more opinionated and streamlined way of building web applications. It includes features like server-side rendering, routing, and API endpoints out of the box, along with a set of conventions and helpers to make building web apps faster and easier.
+>
+> On the other hand, Svelte with Vite is a more lightweight and customizable approach that allows you to build web applications using Svelte as the front-end framework and Vite as the build tool. Vite is a modern build tool that focuses on fast development and supports hot module replacement, code splitting, and other modern features out of the box.
+>
+> The key difference between SvelteKit and Svelte with Vite is the level of abstraction and convenience provided by each approach. SvelteKit provides a more opinionated way of building web applications that aims to reduce the amount of boilerplate and configuration needed to get started, while Svelte with Vite gives you more flexibility and control over how you build your app.
+>
+> In terms of features, SvelteKit includes built-in support for server-side rendering, routing, and API endpoints, while Svelte with Vite requires you to set up these features manually or using third-party libraries. However, Svelte with Vite allows you to use any build tool or server framework you prefer, while SvelteKit has a more tightly integrated stack.
+>
+> Ultimately, the choice between SvelteKit and Svelte with Vite depends on your specific needs and preferences. If you value convenience and are building a more complex web application that requires server-side rendering and API endpoints, SvelteKit may be the better choice. If you prefer more flexibility and control over your build process, Svelte with Vite may be a better fit.
