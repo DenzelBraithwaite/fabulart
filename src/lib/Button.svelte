@@ -13,11 +13,8 @@
 - Make text color settable from outside ✅
 - Make background color settable from outside ✅
 - Make border settable from outside ✅
-- Make border color settable from outside ✅
+- Make border color settable from outside ✅ -->
 
-
-
--->
 {#if border}
 <a href="{url}" class="btn border {classes} {borderColor}"><slot>Try me</slot></a>
 {:else}
@@ -25,6 +22,7 @@
 {/if}
 
 <style>
+
     .btn:link,
     .btn:visited {
         display: inline-block;
@@ -57,6 +55,18 @@
         border-color: #FAD9A1;
     }
 
+    .border-blue {
+        border-color: #339af0;
+    }
+
+    .border-red {
+        border-color: #fa5252;
+    }
+
+    .border-green {
+        border-color: #51cf66;
+    }
+
     /* Button shape */
     .round {
         border-radius: 100px; 
@@ -83,9 +93,21 @@
         color: #FAD9A1;
     }
 
+    .text-blue {
+        color: #339af0;
+    }
+
+    .text-red {
+        color: #fa5252;
+    }
+
+    .text-green {
+        color: #51cf66;
+    }
+
     /* Background colors */
-    .bg-cyan {
-        background-color: cyan;
+    .bg-none {
+        background-color: transparent;
     }
 
     .bg-peach {
@@ -96,7 +118,15 @@
         background-color: #FAD9A1;
     }
 
-    .bg-none {
-        background-color: transparent;
+    .bg-blue {
+        background-color: #339af0;
+    }
+
+    .bg-red {
+        background-color: #fa5252;
+    }
+
+    .bg-green {
+        background-color: #51cf66;
     }
 </style>

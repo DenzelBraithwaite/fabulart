@@ -1,5 +1,6 @@
 <script>
-    import Button from '$lib/Button.svelte'
+    import Button from '$lib/Button.svelte';
+    import Navbar from '$lib/Navbar.svelte';
 </script>
 
 <a href="/" class="back">Back</a>
@@ -8,7 +9,6 @@
 <div class="container">
     <main>
         <h1 class="btn-title">Buttons</h1>
-        <!-- Square buttons -->
         <section>
             <div class="wrapper">
                 <h2>Peach</h2>
@@ -25,9 +25,40 @@
                 <Button shape="round" textColor="text-white" bgColor="bg-yellow">Click me</Button>
                 <Button shape="round" textColor="text-yellow" border={true} borderColor="border-yellow"/>
             </div>
+
+            <div class="wrapper">
+                <h2>Blue</h2>
+                <Button textColor="text-white" bgColor="bg-blue">Click me</Button>
+                <Button textColor="text-blue" border={true} borderColor="border-blue"/>
+                <Button shape="round" textColor="text-white" bgColor="bg-blue">Click me</Button>
+                <Button shape="round" textColor="text-blue" border={true} borderColor="border-blue"/>
+            </div>
+
+            <div class="wrapper">
+                <h2>Red</h2>
+                <Button textColor="text-white" bgColor="bg-red">Click me</Button>
+                <Button textColor="text-red" border={true} borderColor="border-red"/>
+                <Button shape="round" textColor="text-white" bgColor="bg-red">Click me</Button>
+                <Button shape="round" textColor="text-red" border={true} borderColor="border-red"/>
+            </div>
+
+            <div class="wrapper">
+                <h2>Green</h2>
+                <Button textColor="text-white" bgColor="bg-green">Click me</Button>
+                <Button textColor="text-green" border={true} borderColor="border-green"/>
+                <Button shape="round" textColor="text-white" bgColor="bg-green">Click me</Button>
+                <Button shape="round" textColor="text-green" border={true} borderColor="border-green"/>
+            </div>
         </section>
 
         <h1 class="nav-title">Navbars</h1>
+        <section>
+            <Navbar backgroundColor="bg-peach"/>
+            <Navbar backgroundColor="bg-yellow"/>
+            <Navbar backgroundColor="bg-blue"/>
+            <Navbar backgroundColor="bg-red"/>
+            <Navbar backgroundColor="bg-green"/>
+        </section>
     </main>
 </div>
 
