@@ -4,6 +4,7 @@
 
 <a href="/" class="back">Back</a>
 
+<p>These are to show what the UI components will look like, we can still tweak them before using them in the application</p>
 <div class="container">
     <main>
         <h1 class="btn-title">Buttons</h1>
@@ -26,11 +27,7 @@
             </div>
         </section>
 
-        <!-- Round buttons -->
-        <section>
-            <Button shape="round" textColor="text-white" bgColor="bg-peach">Click me</Button>
-            <Button shape="round" textColor="text-black" border={true} />
-        </section>
+        <h1 class="nav-title">Navbars</h1>
     </main>
 </div>
 
@@ -57,7 +54,17 @@
         padding: 0.5rem 1rem;
         width: 50%;
         margin: 0 auto;
+        border-radius: 100px;
+    }
 
+    .nav-title {
+        width: 100%;
+        background-color: #bebebe;
+        text-align: center;
+    }
+
+    h2 {
+        color: #444;
     }
 
     .back {
