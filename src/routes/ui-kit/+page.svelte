@@ -1,11 +1,16 @@
 <script>
     import Button from '$lib/Button.svelte';
     import Navbar from '$lib/Navbar.svelte';
+    import Form from '$lib/Form.svelte';
 </script>
+
+<svelte:head>
+<title>Fabulart | UI kit</title>
+</svelte:head>
 
 <a href="/" class="back">Back</a>
 
-<p>These are to show what the UI components will look like, we can still tweak them before using them in the application</p>
+<p><mark>⚠️These are to show what the UI components will look like, we can still tweak them before using them in the application</mark></p>
 <div class="container">
     <main>
         <h1 class="btn-title">Buttons</h1>
@@ -59,6 +64,11 @@
             <Navbar backgroundColor="bg-red"/>
             <Navbar backgroundColor="bg-green"/>
         </section>
+
+        <h1 class="form-title">Forms</h1>
+        <section>
+            <Form />
+        </section>
     </main>
 </div>
 
@@ -83,15 +93,28 @@
         text-align: center;
         background-color: #bebebe;
         padding: 0.5rem 1rem;
-        width: 50%;
+        width: 30%;
         margin: 0 auto;
         border-radius: 100px;
+        margin-bottom: 2.5rem;
     }
 
     .nav-title {
         width: 100%;
+        padding: 0.5rem 0;
         background-color: #bebebe;
         text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .form-title {
+        text-align: center;
+        margin: 0 auto;
+        background-color: #bebebe;
+        width: 20%;
+        padding: 1rem 0 5rem 0;
+        margin-bottom: 2.5rem;
+        border-radius: 1rem;
     }
 
     h2 {

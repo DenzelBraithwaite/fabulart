@@ -22,7 +22,6 @@
 {/if}
 
 <style>
-
     .btn:link,
     .btn:visited {
         display: inline-block;
