@@ -16,4 +16,9 @@
   :global(body) {
     font-family: 'Ubuntu', sans-serif;
   }
+
+  /* font wasn't applying to form textarea fields */
+  :global(textarea) {
+    font-family: 'Ubuntu';
+  }
 </style>

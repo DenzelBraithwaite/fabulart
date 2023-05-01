@@ -67,7 +67,12 @@
 
         <h1 class="form-title">Forms</h1>
         <section>
-            <Form />
+            <Form bgColor="bg-none" />
+            <Form bgColor="bg-none" newStory={false}/>
+            <Form bgColor="bg-pink" />
+            <Form bgColor="bg-pink" newStory={false}/>
+            <Form bgColor="bg-yellow"/>
+            <Form bgColor="bg-yellow" newStory={false}/>
         </section>
     </main>
 </div>
