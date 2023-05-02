@@ -1,7 +1,7 @@
 <script>
     import Button from '$lib/Button.svelte';
     import Navbar from '$lib/Navbar.svelte';
-    import Form from '$lib/Form.svelte';
+    import Form from '$lib/Form1.svelte';
 </script>
 
 <svelte:head>
