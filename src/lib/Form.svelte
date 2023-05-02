@@ -3,12 +3,18 @@
     export let action = '/';
     export let newStory = true;
     export let bgColor = 'bg-pink';
+
+    function submitHandler() {
+        // Do something when the form gets submitted
+        console.log('form submitted');
+    }
 </script>
+<!-- TODO: make all id's unique, even if they're conditionally rendered, example: id=img-description-->
 
 <!-- The svelte:component is to apply global css from the src/routes/__layout.svelte file -->
 <svelte:component this={Layout}>
 {#if newStory}
-    <form action="{action}" class="{bgColor}">
+    <form on:submit|preventDefault={submitHandler} action="{action}" class="{bgColor}">
         <h2 class="form-title-pink">Create your story!</h2>
         <div class="form-control">
             <input type="text" id="title" name="title" placeholder="Enter your story title here">
@@ -19,7 +25,7 @@
         <button type="submit">Create</button>
     </form>
 {:else}
-    <form action="{action}" class="{bgColor}">
+    <form on:submit|preventDefault={submitHandler} action="{action}" class="{bgColor}">
         <h2 class="form-title-pink">Create another page!</h2>
         <div class="form-control">
             <textarea name="img-description" id="img-description" placeholder="Describe the image you would like to see! Example, friends playing soccer outiside on a sunny day!"></textarea>
@@ -27,7 +33,7 @@
         <div class="form-control">
             <textarea name="page-description" id="page-description" placeholder="Write the text that goes with the image here!"></textarea>
         </div>
-        <button type="submit">Create</button>
+        <button type="submit">Add</button>
     </form>
 {/if}
 </svelte:component>
@@ -54,28 +60,37 @@
         outline: none;
         border: none;
         padding: 0.25rem;
-        min-width: 85%;
-        max-width: 95%;
+        width: 90%;
+        border: 2px solid #b7b7b7;
+        border-radius: 0.25rem;
+    }
+
+    textarea {
+        padding: 0.25rem;
+        min-width: 90%;
+        max-width: 90%;
+        min-height: 100px;
         border: 2px solid #b7b7b7;
         border-radius: 0.25rem;
         max-height: 300px;
     }
 
-    textarea {
-        padding: 0.25rem;
-        min-width: 85%;
-        max-width: 95%;
-        height: 100px;
-        border: 2px solid #b7b7b7;
-        border-radius: 0.25rem;
-        max-height: 300px;
+    .bg-pink textarea,
+    .bg-pink input {
+        background-color: #fff2f1;
+    }
+
+    .bg-yellow textarea,
+    .bg-yellow input {
+        background-color: #fff9ef;
     }
 
     textarea::placeholder {
         /* If you want to style the placeholder text (ex: color) */
     }
 
-    textarea:focus {
+    textarea:focus,
+    input:focus {
         /* outline: 2px solid #D98684; */
         outline: none;
         border: 2px solid #D98684;
@@ -101,6 +116,10 @@
     /* Background Colors */
     .bg-none {
         background-color: transparent;
+    }
+
+    .bg-grey {
+        background-color: #e9e9e9;
     }
 
     .bg-pink {

@@ -1,16 +1,16 @@
 <script>
     import Button from '$lib/Button.svelte';
     import Navbar from '$lib/Navbar.svelte';
-    import Form from '$lib/Form1.svelte';
+    import Form from '$lib/Form.svelte';
 </script>
 
 <svelte:head>
 <title>Fabulart | UI kit</title>
 </svelte:head>
 
-<a href="/" class="back">Back</a>
+<Button url="/" bgColor="bg-red" textColor="text-white">Back</Button>
 
-<p><mark>⚠️These are to show what the UI components will look like, we can still tweak them before using them in the application</mark></p>
+<p class="message"><mark>⚠️These are to show what the UI components will look like, we can still tweak them before using them in the application</mark></p>
 <div class="container">
     <main>
         <h1 class="btn-title">Buttons</h1>
@@ -58,17 +58,20 @@
 
         <h1 class="nav-title">Navbars</h1>
         <section>
+            <Navbar logoCentered={true} backgroundColor="bg-peach"/>
             <Navbar backgroundColor="bg-peach"/>
+            <Navbar logoCentered={true} backgroundColor="bg-yellow"/>
             <Navbar backgroundColor="bg-yellow"/>
+            <Navbar logoCentered={true} backgroundColor="bg-blue"/>
             <Navbar backgroundColor="bg-blue"/>
+            <Navbar logoCentered={true} backgroundColor="bg-red"/>
             <Navbar backgroundColor="bg-red"/>
+            <Navbar logoCentered={true} backgroundColor="bg-green"/>
             <Navbar backgroundColor="bg-green"/>
         </section>
 
         <h1 class="form-title">Forms</h1>
         <section>
-            <Form bgColor="bg-none" />
-            <Form bgColor="bg-none" newStory={false}/>
             <Form bgColor="bg-pink" />
             <Form bgColor="bg-pink" newStory={false}/>
             <Form bgColor="bg-yellow"/>
@@ -82,7 +85,7 @@
         width: 90%;
         margin: 0 auto;
         box-shadow: 0 2px 8px #0000001e;
-        border-radius: 50px 50px 0 0;
+        border-radius: 0.5rem;
         padding: 1rem;
     }
 
@@ -92,6 +95,10 @@
 
     .wrapper {
         margin-bottom: 5rem;
+    }
+
+    .message {
+        text-align: center;
     }
 
     .btn-title {
