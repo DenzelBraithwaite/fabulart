@@ -109,6 +109,10 @@
         background-color: transparent;
     }
 
+    .bg-danger {
+        background-color: red;
+    }
+
     .bg-peach {
         background-color: #D98684;
     }

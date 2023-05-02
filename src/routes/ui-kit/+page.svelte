@@ -2,17 +2,18 @@
     import Button from '$lib/Button.svelte';
     import Navbar from '$lib/Navbar.svelte';
     import Form from '$lib/Form.svelte';
+    import Modal from '$lib/Modal.svelte';
 </script>
 
 <svelte:head>
 <title>Fabulart | UI kit</title>
 </svelte:head>
 
-<Button url="/" bgColor="bg-red" textColor="text-white">Back</Button>
 
 <p class="message"><mark>⚠️These are to show what the UI components will look like, we can still tweak them before using them in the application</mark></p>
 <div class="container">
     <main>
+        <Button url="/" bgColor="bg-danger" textColor="text-white">Back</Button>
         <h1 class="btn-title">Buttons</h1>
         <section>
             <div class="wrapper">
@@ -77,7 +78,16 @@
             <Form bgColor="bg-yellow"/>
             <Form bgColor="bg-yellow" newStory={false}/>
         </section>
-    <Button url="/" bgColor="bg-red" textColor="text-white">Back</Button>
+
+        
+        <div class="backdrop">
+            <h1 class="modal-title">Modals</h1>
+        </div>
+        <section>
+            <Modal></Modal>
+            <Modal></Modal>
+        </section>
+    <Button url="/" bgColor="bg-danger" textColor="text-white">Back</Button>
     </main>
 </div>
 
@@ -100,6 +110,7 @@
 
     .message {
         text-align: center;
+        margin: 5rem auto 1rem;
     }
 
     .btn-title {
@@ -107,35 +118,45 @@
         background-color: #bebebe;
         padding: 0.5rem 1rem;
         width: 30%;
-        margin: 0 auto;
+        margin: 5rem auto 3rem;
         border-radius: 100px;
-        margin-bottom: 2.5rem;
     }
 
     .nav-title {
         width: 100%;
-        padding: 0.5rem 0;
+        padding: 1rem 0;
         background-color: #bebebe;
         text-align: center;
-        margin-bottom: 2.5rem;
+        margin: 10rem auto 3rem;
     }
 
     .form-title {
         text-align: center;
-        margin: 0 auto;
+        margin: 3rem auto;
         background-color: #bebebe;
         width: 20%;
         padding: 1rem 0 5rem 0;
-        margin-bottom: 2.5rem;
         border-radius: 1rem;
+        margin: 10rem auto 3rem;
     }
 
-    h2 {
-        color: #444;
+    .modal-title {
+        text-align: center;
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 0.5rem;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
-    .back {
-        display: block;
-        margin-bottom: 5rem;
+    .backdrop {
+        position: relative;
+        width: 50%;
+        height: 200px;
+        background-color: #bebebe;
+        margin: 10rem auto 3rem;
     }
 </style>

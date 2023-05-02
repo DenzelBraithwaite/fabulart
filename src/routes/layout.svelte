@@ -14,7 +14,14 @@
 <style>
   /* add global styles here */
   :global(body) {
+    box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+  :global(h1,h2,p) {
+    margin: 0;
   }
 
   /* font wasn't applying to form textarea fields */
