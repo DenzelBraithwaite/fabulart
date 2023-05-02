@@ -1,20 +1,34 @@
 <script>
     import '@fortawesome/fontawesome-free/css/all.css';
     export let backgroundColor = '';
+    export let logoCentered = false;
 </script>
 
-<nav class="{backgroundColor}">
-    <div class="wrapper">
-        <i class="fa-solid fa-book-open"></i>
+{#if logoCentered}
+    <nav class="{backgroundColor}">
+        <div class="wrapper">
+            <i class="fa-solid fa-book-open"></i>
+            <h1 class="nav-title">Fabulart</h1>
+        </div>
+        <div class="wrapper">
+            <i class="fa-solid fa-share-nodes"></i>
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </nav>
+{:else}
+    <nav class="{backgroundColor}">
+        <div class="wrapper">
+            <i class="fa-solid fa-book-open"></i>
+        </div>
         <h1 class="nav-title">Fabulart</h1>
-        <!-- <i class="fa-solid fa-book-open"></i> -->
-    </div>
-    <div class="wrapper">
-        <i class="fa-solid fa-share-nodes"></i>
-        <i class="fa-solid fa-house"></i>
-        <i class="fa-solid fa-user"></i>
-    </div>
-</nav>
+        <div class="wrapper">
+            <i class="fa-solid fa-share-nodes"></i>
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </nav>
+{/if}
 
 <style>
     nav {
