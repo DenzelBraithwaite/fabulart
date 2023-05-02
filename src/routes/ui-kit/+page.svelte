@@ -77,6 +77,7 @@
             <Form bgColor="bg-yellow"/>
             <Form bgColor="bg-yellow" newStory={false}/>
         </section>
+    <Button url="/" bgColor="bg-red" textColor="text-white">Back</Button>
     </main>
 </div>
 
