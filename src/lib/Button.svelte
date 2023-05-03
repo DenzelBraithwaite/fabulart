@@ -66,6 +66,10 @@
         border-color: #51cf66;
     }
 
+    .border-purple {
+        border-color: #8284d8;
+    }
+
     /* Button shape */
     .round {
         border-radius: 100px; 
@@ -104,6 +108,10 @@
         color: #51cf66;
     }
 
+    .text-purple {
+        color: #8284d8;
+    }
+
     /* Background colors */
     .bg-none {
         background-color: transparent;
@@ -131,5 +139,9 @@
 
     .bg-green {
         background-color: #51cf66;
+    }
+
+    .bg-purple {
+        background-color: #8284d8;
     }
 </style>

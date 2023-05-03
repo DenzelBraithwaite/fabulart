@@ -35,7 +35,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 1rem;
+        padding: 0.75rem 1rem;
         margin-bottom: 3rem;
         width: 100%;
         transform: translate(-1rem); /* Only for utility kit page */
@@ -70,5 +70,9 @@
 
     .bg-green {
         background-color: #51cf66;
+    }
+
+    .bg-purple {
+        background-color: #8284d8;
     }
 </style>

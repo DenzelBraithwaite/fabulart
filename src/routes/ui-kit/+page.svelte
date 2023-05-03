@@ -55,6 +55,14 @@
                 <Button shape="round" textColor="text-white" bgColor="bg-green">Click me</Button>
                 <Button shape="round" textColor="text-green" border={true} borderColor="border-green"/>
             </div>
+
+            <div class="wrapper">
+                <h2>Purple</h2>
+                <Button textColor="text-white" bgColor="bg-purple">Click me</Button>
+                <Button textColor="text-purple" border={true} borderColor="border-purple"/>
+                <Button shape="round" textColor="text-white" bgColor="bg-purple">Click me</Button>
+                <Button shape="round" textColor="text-purple" border={true} borderColor="border-purple"/>
+            </div>
         </section>
 
         <h1 class="nav-title">Navbars</h1>
@@ -69,6 +77,8 @@
             <Navbar backgroundColor="bg-red"/>
             <Navbar logoCentered={true} backgroundColor="bg-green"/>
             <Navbar backgroundColor="bg-green"/>
+            <Navbar logoCentered={true} backgroundColor="bg-purple"/>
+            <Navbar backgroundColor="bg-purple"/>
         </section>
 
         <h1 class="form-title">Forms</h1>
