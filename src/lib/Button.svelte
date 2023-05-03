@@ -27,7 +27,7 @@
         display: inline-block;
         text-decoration: none;
         text-align: center;
-        padding: 0.5rem 1rem;
+        padding: 0.75rem 1.125rem;
     }
 
     .btn:hover,
@@ -44,6 +44,10 @@
     .no-border {
         border: none;
         background-color: transparent;
+    }
+    
+    .border-grey {
+        border-color: #a5a5a5;
     }
 
     .border-pink {
@@ -80,12 +84,16 @@
     }
 
     /* Text colors */
+    .text-grey {
+        color: #a5a5a5;
+    }
+
     .text-white {
         color: #fff;
     }
 
     .text-black {
-        color: #2b2b2b;
+        color: #a5a5a5;
     }
 
     .text-pink {
@@ -115,6 +123,10 @@
     /* Background colors */
     .bg-none {
         background-color: transparent;
+    }
+
+    .bg-grey {
+        background-color: #a5a5a5;
     }
 
     .bg-danger {

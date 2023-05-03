@@ -18,6 +18,8 @@
     font-family: 'Ubuntu', sans-serif;
     padding: 0;
     margin: 0;
+    color: #2e2e2e;
+    /* line-height: 1; */
   }
 
   :global(h1,h2,p) {

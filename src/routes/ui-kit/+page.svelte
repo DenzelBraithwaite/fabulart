@@ -17,7 +17,15 @@
         <h1 class="btn-title">Buttons</h1>
         <section>
             <div class="wrapper">
-                <h2>pink</h2>
+                <h2>Grey</h2>
+                <Button textColor="text-white" bgColor="bg-grey">Click me</Button>
+                <Button textColor="text-grey" border={true} borderColor="border-grey"/>
+                <Button shape="round" textColor="text-white" bgColor="bg-grey">Click me</Button>
+                <Button shape="round" textColor="text-grey" border={true} borderColor="border-grey"/>
+            </div>
+
+            <div class="wrapper">
+                <h2>Pink</h2>
                 <Button textColor="text-white" bgColor="bg-pink">Click me</Button>
                 <Button textColor="text-pink" border={true} borderColor="border-pink"/>
                 <Button shape="round" textColor="text-white" bgColor="bg-pink">Click me</Button>
@@ -105,8 +113,28 @@
             <h1 class="modal-title">Modals</h1>
         </div>
         <section>
-            <Modal></Modal>
-            <Modal></Modal>
+            <Modal type="onboarding" btnColor='bg-pink'>
+                <div slot="title">Welcome to Fabulart!</div>
+                <div slot="message">Let's get started. You and your creativity can now use Fabulart for free to create amazing stories.
+                    So what are you waiting for? Let's dive right in!
+                </div>
+                <div slot="button">Get Started</div>
+            </Modal>
+
+            <Modal type="warning">
+                <div slot="title">Delete story?</div>
+                <div slot="message">Warning: This action cannot be reversed. If you delete your story, you won't be able to recover it, so make sure you're deleting the right one!
+                </div>
+                <div slot="btn-accept">Yes, delete it</div>
+                <div slot="btn-refuse">No, go back</div>
+            </Modal>
+
+            <Modal type="new-feature" btnColor='bg-purple'>
+                <div slot="title">New Feature</div>
+                <div slot="message">You can now quickly save your story to your favorites by clicking the 'save' button. 
+                </div>
+                <div slot="button">Got it</div>
+            </Modal>
         </section>
     <Button url="/" bgColor="bg-danger" textColor="text-white">Back</Button>
     </main>
