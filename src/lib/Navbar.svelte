@@ -52,7 +52,7 @@
         background-color: transparent;
     }
 
-    .bg-peach {
+    .bg-pink {
         background-color: #D98684;
     }
 

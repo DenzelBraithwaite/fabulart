@@ -17,11 +17,11 @@
         <h1 class="btn-title">Buttons</h1>
         <section>
             <div class="wrapper">
-                <h2>Peach</h2>
-                <Button textColor="text-white" bgColor="bg-peach">Click me</Button>
-                <Button textColor="text-peach" border={true} borderColor="border-peach"/>
-                <Button shape="round" textColor="text-white" bgColor="bg-peach">Click me</Button>
-                <Button shape="round" textColor="text-peach" border={true} borderColor="border-peach"/>
+                <h2>pink</h2>
+                <Button textColor="text-white" bgColor="bg-pink">Click me</Button>
+                <Button textColor="text-pink" border={true} borderColor="border-pink"/>
+                <Button shape="round" textColor="text-white" bgColor="bg-pink">Click me</Button>
+                <Button shape="round" textColor="text-pink" border={true} borderColor="border-pink"/>
             </div>
             
             <div class="wrapper">
@@ -67,16 +67,27 @@
 
         <h1 class="nav-title">Navbars</h1>
         <section>
-            <Navbar logoCentered={true} backgroundColor="bg-peach"/>
-            <Navbar backgroundColor="bg-peach"/>
+            <h2>Pink</h2>
+            <Navbar logoCentered={true} backgroundColor="bg-pink"/>
+            <Navbar backgroundColor="bg-pink"/>
+
+            <h2>Yellow</h2>
             <Navbar logoCentered={true} backgroundColor="bg-yellow"/>
             <Navbar backgroundColor="bg-yellow"/>
+
+            <h2>Blue</h2>
             <Navbar logoCentered={true} backgroundColor="bg-blue"/>
             <Navbar backgroundColor="bg-blue"/>
+
+            <h2>Red</h2>
             <Navbar logoCentered={true} backgroundColor="bg-red"/>
             <Navbar backgroundColor="bg-red"/>
+
+            <h2>Green</h2>
             <Navbar logoCentered={true} backgroundColor="bg-green"/>
             <Navbar backgroundColor="bg-green"/>
+
+            <h2>Purple</h2>
             <Navbar logoCentered={true} backgroundColor="bg-purple"/>
             <Navbar backgroundColor="bg-purple"/>
         </section>

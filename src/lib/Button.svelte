@@ -4,7 +4,7 @@
     export let shape = 'square'
     export let url = '/'
     export let border = false;
-    export let borderColor = 'border-peach';
+    export let borderColor = 'border-pink';
     $: classes = `${textColor} ${bgColor} ${shape}`
 </script>
 
@@ -46,7 +46,7 @@
         background-color: transparent;
     }
 
-    .border-peach {
+    .border-pink {
         border-color: #D98684;
     }
 
@@ -88,7 +88,7 @@
         color: #2b2b2b;
     }
 
-    .text-peach {
+    .text-pink {
         color: #D98684;
     }
 
@@ -121,7 +121,7 @@
         background-color: red;
     }
 
-    .bg-peach {
+    .bg-pink {
         background-color: #D98684;
     }
 
